@@ -8,7 +8,7 @@ variable "partitions" {
   description = "Number of partitions used to shard the topic"
 
   validation {
-    condition     = var.number > 0
+    condition     = var.partitions > 0
     error_message = "The value must be greater than zero"
   }
 }
