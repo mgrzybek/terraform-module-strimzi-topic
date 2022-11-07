@@ -3,6 +3,11 @@ variable "kafka_cluster" {
   description = "Name of the topic to create"
 }
 
+variable "name" {
+  type        = string
+  description = "name of the topic to create"
+}
+
 variable "partitions" {
   type        = number
   description = "Number of partitions used to shard the topic"
