@@ -6,7 +6,8 @@ resource "kubernetes_manifest" "topic" {
       "labels" = {
         "strimzi.io/cluster" = var.kafka_cluster
       }
-      "name" = var.name
+      "name"      = var.name
+      "namespace" = var.namesoace
     }
     "spec" = {
       "partitions" = var.partitions

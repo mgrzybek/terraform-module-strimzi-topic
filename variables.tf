@@ -8,6 +8,12 @@ variable "name" {
   description = "name of the topic to create"
 }
 
+
+variable "namespace" {
+  type        = string
+  description = "Cluster’s namespace"
+}
+
 variable "partitions" {
   type        = number
   description = "Number of partitions used to shard the topic"
